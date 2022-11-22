@@ -3,8 +3,6 @@ Processo seletivo da NG
 
 
 
-# Readme.md ng
-
 # Porfolio API
 
 ## Base URL:
