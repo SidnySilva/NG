@@ -16,8 +16,4 @@ export const signUpController = async (req: Request, res:Response) =>{
     }
 }
 
-export const teste = async (req: Request, res:Response) =>{
-    const users = await prisma.user.findMany()
 
-    return res.status(200).json({users})
-}

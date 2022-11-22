@@ -5,6 +5,6 @@ import validateToken from "../middlewares/auth.middleware"
 
 export const transactionRouter = Router()
 
-transactionRouter.post("/cashin",cashInController)
+transactionRouter.post("/cashin",validateToken,cashInController)
 transactionRouter.post("/cashout",validateToken,cashOutController)
-transactionRouter.get("",cashInController)
+transactionRouter.get("/:string",validateToken,cashInController)
